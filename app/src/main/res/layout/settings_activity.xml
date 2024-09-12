@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Contact Name input -->
+    <EditText
+        android:id="@+id/contactNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Name"
+        android:minHeight="48dp" />
+
+    <!-- Contact Number input -->
+    <EditText
+        android:id="@+id/contactNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+    <!-- Add Contact button -->
+    <Button
+        android:id="@+id/addContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contact" />
+
+    <!-- Update Contact button -->
+    <Button
+        android:id="@+id/updateContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Contact" />
+
+    <!-- Delete Contact button -->
+    <Button
+        android:id="@+id/deleteContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Contact" />
+
+    <!-- List of contacts -->
+    <ListView
+        android:id="@+id/contactListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

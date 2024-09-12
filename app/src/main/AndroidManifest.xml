@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sos_app">
+
+    <!-- Application configuration -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InteractiveSOSApp">
+
+        <!-- MainActivity configuration -->
+        <activity android:name="com.example.sos_app.MainActivity"
+            android:exported="true"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- SettingsActivity configuration -->
+        <activity android:name="com.example.sos_app.SettingsActivity" />
+
+    </application>
+
+    <!-- Permissions required for SOS app -->
+    <!-- SMS permission to send emergency messages -->
+    <uses-permission android:name="android.permission.SEND_SMS"
+        tools:ignore="ManifestOrder,PermissionImpliesUnsupportedChromeOsHardware" />
+
+    <!-- Location permissions for accessing both fine and coarse locations -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Background location permission (for Android 10 and above) -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <!-- Call permission to make emergency calls -->
+    <uses-permission android:name="android.permission.CALL_PHONE"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+
+    <!-- Permission to record audio -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Permission for internet access (for sending audio or handling network operations) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+
+
+
+
+
+
+
+
+</manifest>
